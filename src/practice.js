@@ -8,8 +8,6 @@ const knexInstance = knex({
 
 console.log('knex and driver installed correctly');
 
-knexInstance('amazong_products')
-  .select('*');
 
 const qry = knexInstance
   .select('product_id', 'name', 'price', 'category')
